@@ -10,8 +10,7 @@
     <script>
         $(document).ready(function(){
             $.ajax({url: "http://localhost:8000/Mascotas", success: function(result){
-               // alert();
-                $("#listaViviendas").append("codigo entregado");
+                $("#listaMascotas").append("codigo entregado");
                 var salida=result[0].calle;
                 alert(salida);
             }});
